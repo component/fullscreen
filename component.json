@@ -4,7 +4,9 @@
   "description": "Fullscreen api",
   "version": "0.2.0",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "component/events": "*"
+  },
   "development": {},
   "license": "MIT",
   "scripts": [
