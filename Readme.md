@@ -17,6 +17,10 @@
 
   Exit fullscreen mode.
 
+### fullscreen.supported
+
+  Check if fullscreen is supported.
+
 ## License
 
   MIT
