@@ -6,6 +6,20 @@
 exports = module.exports = fullscreen;
 
 /**
+ * document element.
+ */
+
+var element = document.documentElement;
+
+/**
+ * fullscreen supported flag.
+ */
+
+exports.supported = element.requestFullscreen
+  || element.webkitRequestFullscreen
+  || element.mozRequestFullScreen;
+
+/**
  * Enter fullscreen mode for `el`.
  *
  * @param {Element} [el]
@@ -13,7 +27,7 @@ exports = module.exports = fullscreen;
  */
 
 function fullscreen(el){
-  el = el || document.documentElement;
+  el = el || element;
   if (el.requestFullscreen) return el.requestFullscreen();
   if (el.mozRequestFullScreen) return el.mozRequestFullScreen();
   if (el.webkitRequestFullscreen) return el.webkitRequestFullscreen();
