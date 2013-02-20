@@ -9,7 +9,9 @@
 
 ## API
 
-   
+## fullscreen([el])
+
+  Display fullscreen document or `el`.
 
 ## License
 
