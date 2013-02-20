@@ -3,7 +3,9 @@
   "description": "Fullscreen api",
   "version": "0.2.0",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "emitter-component": "*"
+  },
   "development": {},
   "license": "MIT",
   "component": {

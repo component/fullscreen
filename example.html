@@ -14,6 +14,9 @@
   <video controls="" src="http://videos-cdn.mozilla.net/serv/webmademovies/Moz_Doc_0329_GetInvolved_ST.webm" width="640" height="360" id="myvideo">
   <script>
   var fullscreen = require('fullscreen');
+  fullscreen.on('change', function(full){
+    console.log('changed to %s', full ? 'fullscreen' : 'regular');
+  });
   </script>
 </body>
 </html>
