@@ -15,9 +15,9 @@ var element = document.documentElement;
  * fullscreen supported flag.
  */
 
-exports.supported = element.requestFullscreen
+exports.supported = !!(element.requestFullscreen
   || element.webkitRequestFullscreen
-  || element.mozRequestFullScreen;
+  || element.mozRequestFullScreen);
 
 /**
  * Enter fullscreen mode for `el`.
