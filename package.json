@@ -1,13 +1,14 @@
 {
-  "name": "fullscreen",
-  "repo": "component/fullscreen",
+  "name": "fullscreen-component",
   "description": "Fullscreen api",
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {},
   "development": {},
   "license": "MIT",
-  "scripts": [
-    "index.js"
-  ]
+  "component": {
+    "scripts": {
+      "fullscreen/index.js": "index.js"
+    }
+  }
 }
