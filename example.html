@@ -6,7 +6,11 @@
 <body>
   <h1>Fullscreen</h1>
   <p>Press the button below to enter fullscreen mode.</p>
-  <button onclick='fullscreen()'>Go!</button>
+  <p>
+    <button onclick='fullscreen()'>Go!</button>
+    <button onclick='fullscreen(document.querySelector("#myvideo"))'>Go video!</button>
+  </p>
+  <video controls="" src="http://videos-cdn.mozilla.net/serv/webmademovies/Moz_Doc_0329_GetInvolved_ST.webm" width="640" height="360" id="myvideo">
   <script>
   var fullscreen = require('fullscreen');
   </script>
