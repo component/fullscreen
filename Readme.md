@@ -9,9 +9,13 @@
 
 ## API
 
-## fullscreen([el])
+### fullscreen([el])
 
   Display fullscreen document or `el`.
+
+### fullscreen.exit()
+
+  Exit fullscreen mode.
 
 ## License
 
