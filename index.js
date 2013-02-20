@@ -1,9 +1,21 @@
 
 /**
+ * Module dependencies.
+ */
+
+var Emitter = require('emitter');
+
+/**
  * Expose `fullscreen()`.
  */
 
 exports = module.exports = fullscreen;
+
+/**
+ * Mixin emitter.
+ */
+
+Emitter(exports);
 
 /**
  * document element.
@@ -45,3 +57,24 @@ exports.exit = function(){
   if (doc.mozCancelFullScreen) return doc.mozCancelFullScreen();
   if (doc.webkitCancelFullScreen) return doc.webkitCancelFullScreen();
 };
+
+/**
+ * Change handler function.
+ */
+
+function change(prop) {
+  return function(){
+    var val = document[prop];
+    exports.emit('change', val);
+  }
+}
+
+/**
+ * Handle events.
+ */
+
+if (document.addEventListener) {
+  document.addEventListener('fullscreenchange', change('fullscreen'));
+  document.addEventListener('mozfullscreenchange', change('mozFullScreen'));
+  document.addEventListener('webkitfullscreenchange', change('webkitIsFullScreen'));
+}

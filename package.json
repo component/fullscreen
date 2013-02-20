@@ -4,7 +4,6 @@
   "version": "0.2.0",
   "keywords": [],
   "dependencies": {
-    "events-component": "*",
     "emitter-component": "*"
   },
   "development": {},
