@@ -12,5 +12,9 @@
     "scripts": {
       "fullscreen/index.js": "index.js"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/fullscreen.git"
   }
 }
