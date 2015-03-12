@@ -11,11 +11,6 @@
   },
   "development": {},
   "license": "MIT",
-  "component": {
-    "scripts": {
-      "fullscreen/index.js": "index.js"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/component/fullscreen.git"
