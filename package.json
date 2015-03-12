@@ -4,7 +4,10 @@
   "version": "1.0.0",
   "keywords": [],
   "dependencies": {
-    "emitter-component": "*"
+    "component-emitter": "*"
+  },
+  "browser": {
+    "emitter": "component-emitter"
   },
   "development": {},
   "license": "MIT",
